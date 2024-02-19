@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+img {
+    width: 360px;
+}
+
+img:hover {
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+    25% {
+        transform: translateX(10px);
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(10px);
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateX(-5px);
+        transform: translateX(5px);
+    }
+}
+
+#btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: white;
+  border: 2px solid aqua;
+}
+
+#btn:hover{
+ background-color: aqua;
+ cursor: pointer;
+}
